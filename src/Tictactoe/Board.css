@@ -1,0 +1,87 @@
+:root {
+    --color : rgb(193,2,61);
+    --bgcolor : linear-gradient( rgb(236,224,245) ,rgb(238,232,234), rgb(245,243,218));
+
+}
+body {
+     background: cadetblue;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+.main-board {
+    background: var(--bgcolor);
+}
+.App {
+    text-align: center;
+    color: var(--color);
+    width: 100%;
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .board-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .square {
+    background: transparent;
+    border: 1px solid #999;
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 80px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 80px;
+    color: var(--color);
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .restart-btn {
+    margin: 10px;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    background-color: cadetblue;
+    color: #e3e3e3;
+    /* font-size: 18px; */
+    border-radius: 5px;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    /* CSS rules for screens smaller than or equal to 768px wide */
+    .square {
+        font-size: 35px;
+        height: 65px;
+        width: 65px;
+      }
+    .status {
+        font-size: 20px;
+      }
+    .restart-btn {
+        padding: 2% 5%;
+    }
+  }
+  
+ 
